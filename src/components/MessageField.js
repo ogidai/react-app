@@ -9,6 +9,7 @@ const MessageField = ({ name, setText, text }) => {
     return (
     <TextField
     fullWidth={true}
+    autoFocus={true}
     onChange={(e) => {
         setText(e.target.value);
     }}
