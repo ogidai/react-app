@@ -25,7 +25,7 @@ const MessageField = ({ inputEl, name, setText, text }) => {
         if(e.key === "Enter"){
         // if(e.key === "Enter" && text !== ''){
             // 押されたキーがEnterかつ、テキストが空欄ではない場合（自分で考えたコード）
-            pushMessage({ name: 'ogi', text });
+            pushMessage({ name, text });
             console.log('push message to firebase');
             setText('');
             e.preventDefault();
